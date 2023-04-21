@@ -1,0 +1,55 @@
+html{
+    background-image: url("../img/273289.jpg");
+    background-size: cover; 
+    background-position: center;
+}
+
+header img{
+    width: 5%;
+    padding: 25px;
+}
+
+section{
+    display: inline-block;
+}
+
+.contenido{
+    margin: 0 10% 31% 5%;
+}
+
+.contenido textarea{
+    width: 60em;
+    background-color: rgba(00, 00, 00, 0);
+    resize: none;
+    border-radius: 10px;
+    height: 500px;
+    display: block;
+    
+}
+
+.botones{
+    margin: 2em 3em ;
+    padding: 5px 30px 5px 30px;
+    background-color: #e49b2e;
+
+}
+/* div resultado de l aencriptacion*/
+.resultado textarea{
+    width: 20em;
+    background-color: rgba(00, 00, 00, 0);
+    resize: none;
+    border-radius: 10px;
+    height: 500px;
+    display: block;
+    
+}
+
+footer{
+    
+    font-size: 10px;
+    text-align: center;
+    color: azure;
+    padding: 15px ;
+    width: 100%;
+}
+
