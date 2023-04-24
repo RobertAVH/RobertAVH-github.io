@@ -7,29 +7,36 @@
     
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="./script/scripts.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     
     <title>Encriptador Desafio Alura </title>
 </head>
 <body>
-
     <header>
         <img src="img/logo.svg" alt="icono enciptador" >
     </header>
-
-    <section class="contenido">
-        <textarea name="mensaje" id="mensaje" placeholder="Ingrese el texto aqui"></textarea>
-        <input class="botones" type="button" value="Encriptar">
-        <input class="botones" type="button" value="Desencriptar">
-    </section>
-    <section class="resultado">
-        <textarea name="mensajeEncriptado" id="mensajeEncriptado" placeholder="Ingrese el texto aqui"></textarea>
-        <input class="botones" type="button" value="Encriptar">
-    </section>
-        
+    <main>
+        <section class="contenido">
+            <textarea name="mensaje" id="mensaje" placeholder="Ingrese el texto aqui"></textarea>
+            <label for="nota"><img src="./img/icon.svg" alt=""> Solo letras minusculas y sin signos especiales</label>
+            <input class="botones" type="button" value="Encriptar" onclick=encriptar()>
+            <input class="botones" type="button" value="Desencriptar" onclick=desencriptar()>
+        </section>
+        <section class="resultado">
+            <textarea name="mensajeEncriptado" id="mensajeEncriptado" style="display: none;"></textarea>
+            <div id="imagen">
+                <img src="./img/muneco.svg" alt="ningunMensajeEncontrado">
+                <h2 class="aside__h2">Ningún mensaje fue encontrado</h2>
+                    <p class="aside__p">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <input class="botones" type="button" value="Copiar" onclick=copyToClickBoard()>
+        </section>
+    </main>
     <footer>Desarrollado por: Roberto Angel Valdez Hernández</footer>
+
 </body>
 </html>

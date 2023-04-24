@@ -2,54 +2,118 @@ html{
     background-image: url("../img/273289.jpg");
     background-size: cover; 
     background-position: center;
+    height: 100%;
+}
+body{
+    font-family: 'Righteous', cursive;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
 }
 
 header img{
-    width: 5%;
+    min-height: 5vh;
     padding: 25px;
 }
-
+main{
+    width: 100%;
+    
+}
 section{
     display: inline-block;
 }
 
 .contenido{
-    margin: 0 10% 31% 5%;
+    margin-left: 5%;
+    min-height: 60vh;
+    width: 60vw;
+    
 }
 
+textarea{
+    background-color:whitesmoke;
+    opacity: 0.7;
+    color: rgb(212, 76, 41);
+}
 .contenido textarea{
-    width: 60em;
-    background-color: rgba(00, 00, 00, 0);
+    width: 100%;
+    /* background-color: rgba(00, 00, 00, 0); */
     resize: none;
     border-radius: 10px;
     height: 500px;
     display: block;
+    font-size: 28px;
     
+}
+label{
+    font-size: 15px;
+    display: block;
+    font-weight: bold;
 }
 
 .botones{
     margin: 2em 3em ;
     padding: 5px 30px 5px 30px;
     background-color: #e49b2e;
-
+    border-radius: 15px;
+    font-size: 20px;
+    border: 0;
+    width: 15em;
 }
-/* div resultado de l aencriptacion*/
+.botones:hover{
+    background-color: #eee016;
+    color: aliceblue;
+}
+/* div resultado de la encriptacion*/
+#imagen{
+    border-radius: 10px;
+    border: 1 black solid;
+    background-color: #eee016;
+    opacity: 0.7;
+    margin-left: 10px;
+}
+
+.resultado{
+    
+    height: 500px;
+}
+#imagen{
+    height: 500px;
+    padding-top: 25px;
+    text-align: center;
+    background-color:whitesmoke;
+    margin-left: 10%;
+    width: 30vw;
+}
+
+#imagen h2{
+    padding-top: 10%;
+    font-size: 20px;
+}
+#imagen p{
+    font-size: 14px;
+    padding-top: 5%;
+}
 .resultado textarea{
-    width: 20em;
-    background-color: rgba(00, 00, 00, 0);
+    min-height: 30vh;
+    width: 30vw;
     resize: none;
     border-radius: 10px;
     height: 500px;
     display: block;
-    
+    margin-left: 10%;
+    font-size: 28px;
+    padding-top: 25px;
 }
 
 footer{
-    
-    font-size: 10px;
+    margin-top: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20px;
     text-align: center;
     color: azure;
-    padding: 15px ;
-    width: 100%;
+    background-color: #FE9400;
 }
 
